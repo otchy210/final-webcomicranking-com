@@ -29,6 +29,15 @@ const anyDocPaths = /.+(\/|\.html|\.php|\.cgi)$/;
 app.get(anyDocPaths, redirectToRoot);
 app.post(anyDocPaths, redirectToRoot);
 
+// 404 handler
+app.use((req, res, next) => {
+    res
+        .status(404)
+        .set('Content-Type', 'text/plain')
+        .send('Not Found')
+        .end();
+});
+
 const listener = app.listen(8080, () => {
     const port = listener.address().port;
     const suffix = port == 80 ? '' : `:${port}`
