@@ -1,10 +1,11 @@
 {
   "name": "final-webcomicranking-com",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "deploy": "gcloud app deploy --project final-webcomicranking-com"
   },
   "repository": {
     "type": "git",
