@@ -1,0 +1,22 @@
+{
+  "name": "final-webcomicranking-com",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otchy210/final-webcomicranking-com.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/otchy210/final-webcomicranking-com/issues"
+  },
+  "homepage": "https://github.com/otchy210/final-webcomicranking-com#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
