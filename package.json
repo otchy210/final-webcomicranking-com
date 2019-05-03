@@ -1,6 +1,6 @@
 {
   "name": "final-webcomicranking-com",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/otchy210/final-webcomicranking-com#readme",
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "milligram": "^1.3.0"
   }
 }

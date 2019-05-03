@@ -5,11 +5,18 @@ const app = express();
 app.get('/', (req, res) => {
     res
         .status(200)
-        .send('Final WCR')
+        .send('WCR の跡地')
         .end();
 });
 
-app.listen(8080, () => {
-    console.log('http://localhost:8080/');
+app.use(express.static('public', {
+    index: false,
+    redirect: false
+}));
+
+const listener = app.listen(8080, () => {
+    const port = listener.address().port;
+    const suffix = port == 80 ? '' : `:${port}`
+    console.log(`http://localhost${suffix}/`);
     console.log('Ctrl+C to quit');
 });
