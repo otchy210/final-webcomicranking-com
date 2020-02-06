@@ -1,0 +1,41 @@
+body {
+    background-color: #ccf;
+    margin: 0 2.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+.social-container {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2.5rem;
+}
+.social-container iframe {
+    margin-right: 8px;
+}
+main.container {
+    padding: 0 5rem 2.5rem 5rem;
+    background-color: #fff;
+}
+main h1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -5rem 2.5rem -5rem;
+    padding: 2.5rem 5rem;
+    background-color: #ddd;
+}
+main h1 .logo {
+    line-height: 0;
+}
+small {
+    font-size: 70%;
+}
+code {
+    font-size: 100%;
+}
+.image-container {
+    text-align: center;
+}
+.image-container > img {
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}

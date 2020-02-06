@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
 
@@ -17,10 +18,7 @@ app.get('/', (req, res) => {
         res.redirect(301, `https://${req.hostname}/`).end();
         return;
     }
-    res
-        .status(200)
-        .send('WCR の跡地')
-        .end();
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // other docs
