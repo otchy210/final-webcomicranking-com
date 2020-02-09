@@ -14,10 +14,10 @@ app.use(express.static('public', {
 
 // root
 app.get('/', (req, res) => {
-    // if (req.hostname !== 'localhost' && req.get('X-Forwarded-Proto') === 'http') {
-    //     res.redirect(301, `https://${req.hostname}/`).end();
-    //     return;
-    // }
+    if (req.hostname !== 'localhost' && req.get('X-Forwarded-Proto') === 'http') {
+        res.redirect(301, `https://${req.hostname}/`).end();
+        return;
+    }
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
