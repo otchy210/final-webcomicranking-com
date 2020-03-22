@@ -36,8 +36,8 @@ app.use((req, res, next) => {
         .end();
 });
 
-const listener = app.listen(8080, () => {
-    const port = listener.address().port;
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
     const suffix = port == 80 ? '' : `:${port}`
     console.log(`http://localhost${suffix}/`);
     console.log('Ctrl+C to quit');
